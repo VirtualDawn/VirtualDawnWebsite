@@ -3,8 +3,8 @@
 
 // Page Preloader
 	$(window).load(function() {
-		$(".loader").delay(10).fadeOut();
-		$(".animationload").delay(10).fadeOut("slow");
+		$(".loader").delay(1).fadeOut();
+		$(".animationload").delay(1).fadeOut("slow");
 	});
 	
 // Header Effect
@@ -19,7 +19,7 @@
 		
 // Smooth Scroll
 	smoothScroll.init({
-		speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+		speed: 1, // Integer. How fast to complete the scroll in milliseconds
 		easing: 'easeInOutCubic', // Easing pattern to use
 		updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
 		offset: 1, // Integer. How far to offset the scrolling anchor location in pixels
@@ -129,7 +129,7 @@
 		
 // Google Map
 	var locations = [
-		['<div class="infobox"><h3 class="title"><a href="#contact">OUR USA OFFICE</a></h3><span>NEW YORK CITY 2045 / 65</span><br>+90 555 666 77 88</p></div></div></div>', 61.4981503, 23.7610254]
+		['<div class="infobox"><h3 class="title"><a href="#contact">OUR USA OFFICE</a></h3><span>Tampere, Finland</span><br>+phone number</p></div></div></div>', 61.4981503, 23.7610254]
 		];
 	
 		var map = new google.maps.Map(document.getElementById('map'), {
